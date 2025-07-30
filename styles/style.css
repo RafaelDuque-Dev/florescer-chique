@@ -1,0 +1,294 @@
+:root {
+  /* Paleta de cores */
+  --color-rose-gold: #B76E79;
+  --color-creme-elegante: #FDF6F0;
+  --color-verde-eucalipto: #7BA69D;
+  --color-dourado: #D4AF37;
+
+  /* Fontes */
+  --font-title-primary: 'Playfair Display', serif;
+  --font-title-alt: 'Cinzel', serif;
+  --font-text-primary: 'Poppins', sans-serif;
+  --font-text-alt: 'Lato', sans-serif;
+
+  /* Tamanhos */
+  --font-size-title: 2.5rem;
+  --font-size-subtitle: 1.75rem;
+  --font-size-text: 1rem;
+  --font-size-small-text: 0.875rem;
+}
+
+/* Reset e base */
+body {
+  margin: 0;
+  font-family: var(--font-text-primary);
+  background-color: var(--color-creme-elegante);
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--color-rose-gold);
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.logo-header {
+  width: 170px;
+  height: auto;
+  display: inline-block;
+}
+
+header p {
+  font-family: var(--font-text-alt);
+  font-size: 1.2em;
+  color: var(--color-creme-elegante);
+}
+
+/* Navegação */
+nav {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--color-rose-gold);
+  font-weight: bold;
+  font-family: var(--font-text-alt);
+}
+
+/* Banner e Carrossel principal */
+.banner {
+  position: relative;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  min-height: 280px;
+  max-height: 500px;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Efeito translúcido rose gold */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(183, 110, 121, 0.35); /* rose gold translúcido */
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Carrossel cobre todo o banner */
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Destaques sobrepostos ao banner */
+.destaque-banner,
+.section#destaques {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  background: rgba(255,255,255,0.85);
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.produtos-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.produtos-track {
+  display: flex;
+  transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  will-change: transform;
+}
+
+.produtos-card {
+  min-width: 280px;
+  max-width: 320px;
+  margin: 0 10px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.produtos-arrow {
+  background: var(--color-rose-gold);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.produtos-arrow.left {
+  left: 10px;
+}
+
+.produtos-arrow.right {
+  right: -50px;
+}
+
+.produtos-arrow:hover {
+  opacity: 1;
+}
+
+.destaque-frase {
+  font-family: var(--font-title-alt);
+  font-size: 1.5em;
+  color: var(--color-rose-gold);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+/* Seção padrão */
+.section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-family: var(--font-title-primary);
+  color: var(--color-rose-gold);
+  margin-bottom: 2rem;
+}
+
+/* Grid de produtos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card de produto */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  color: var(--color-verde-eucalipto);
+  margin: 0 0 0.5rem;
+  font-family: var(--font-title-alt);
+}
+
+.card-body p {
+  margin: 0.5rem 0;
+  font-family: var(--font-text-alt);
+  font-size: var(--font-size-text);
+}
+
+/* Botão WhatsApp */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .produtos-card {
+    min-width: 80vw;
+    max-width: 90vw;
+  }
+  .produtos-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+  }
+}

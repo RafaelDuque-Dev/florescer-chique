@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nome": "Brinco Flor de Pérola",
+    "categoria": "Brincos",
+    "destaque": true,
+    "preco": 49.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Colar Coração Dourado",
+    "categoria": "Colares",
+    "destaque": false,
+    "preco": 79.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Pulseira Riviera Prata",
+    "categoria": "Pulseiras",
+    "destaque": true,
+    "preco": 89.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Anel Ajustável de Cristal",
+    "categoria": "Anéis",
+    "destaque": false,
+    "preco": 39.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 5,
+    "nome": "Brinco Gota de Zircônia",
+    "categoria": "Brincos",
+    "destaque": true,
+    "preco": 59.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Colar Mandala da Fé",
+    "categoria": "Colares",
+    "destaque": false,
+    "preco": 99.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "Pulseira Elos Finos",
+    "categoria": "Pulseiras",
+    "destaque": false,
+    "preco": 69.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 8,
+    "nome": "Anel Solitário Luxo",
+    "categoria": "Anéis",
+    "destaque": true,
+    "preco": 119.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 9,
+    "nome": "Brinco Ponto de Luz",
+    "categoria": "Brincos",
+    "destaque": false,
+    "preco": 29.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  },
+  {
+    "id": 10,
+    "nome": "Colar Pérola Elegance",
+    "categoria": "Colares",
+    "destaque": false,
+    "preco": 109.9,
+    "imagem": "imagens/brinco-flor.jpg"
+  }
+]
