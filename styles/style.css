@@ -68,9 +68,9 @@ nav a {
   background-image: url('');
   background-size: cover;
   background-position: center;
-  height: 60vh;
-  min-height: 280px;
-  max-height: 500px;
+  height: 600px;
+  min-height: 400px;
+  max-height: 600px;
   z-index: 1;
   overflow: hidden;
   display: flex;
@@ -164,35 +164,11 @@ nav a {
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
+
 }
 
-.produtos-arrow {
-  background: var(--color-rose-gold);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 20;
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-
-.produtos-arrow.left {
-  left: 10px;
-}
-
-.produtos-arrow.right {
-  right: -50px;
-}
-
-.produtos-arrow:hover {
-  opacity: 1;
+.produtos-card:hover {
+  transform: scale(1.03);
 }
 
 .destaque-frase {
@@ -261,6 +237,36 @@ nav a {
   font-size: var(--font-size-text);
 }
 
+footer {
+  background-color: var(--color-rose-gold);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-text-alt);
+}
+
+footer ul li a img:hover {
+  transform: scale(1.09);
+}
+
+
 /* Botão WhatsApp */
 .whatsapp {
   position: fixed;
@@ -269,26 +275,33 @@ nav a {
   background-color: #25D366;
   color: white;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
 }
 
 
 /* Responsivo */
 @media (max-width: 700px) {
+
+  .banner {
+    min-height: 730px;
+    
+  }
+
   .produtos-card {
     min-width: 80vw;
     max-width: 90vw;
   }
-  .produtos-arrow {
-    width: 32px;
-    height: 32px;
-    font-size: 1.5rem;
-  }
+
 }

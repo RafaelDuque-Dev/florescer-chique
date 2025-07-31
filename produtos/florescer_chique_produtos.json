@@ -5,15 +5,15 @@
     "categoria": "Brincos",
     "destaque": true,
     "preco": 49.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 2,
     "nome": "Colar Coração Dourado",
     "categoria": "Colares",
-    "destaque": false,
+    "destaque": true,
     "preco": 79.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "categoria": "Pulseiras",
     "destaque": true,
     "preco": 89.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "categoria": "Anéis",
     "destaque": false,
     "preco": 39.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "categoria": "Brincos",
     "destaque": true,
     "preco": 59.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "categoria": "Colares",
     "destaque": false,
     "preco": 99.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "categoria": "Pulseiras",
     "destaque": false,
     "preco": 69.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "categoria": "Anéis",
     "destaque": true,
     "preco": 119.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "categoria": "Brincos",
     "destaque": false,
     "preco": 29.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   },
   {
     "id": 10,
@@ -77,6 +77,6 @@
     "categoria": "Colares",
     "destaque": false,
     "preco": 109.9,
-    "imagem": "imagens/brinco-flor.jpg"
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
   }
 ]

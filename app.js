@@ -15,25 +15,13 @@ async function carregarProdutos() {
         <div class="card-body">
           <h3>${produto.nome}</h3>
           <p><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
-          <p>${produto.categoria}</p>
         </div>
       `;
       produtosTrack.appendChild(card);
     });
 
-    // Carrossel automático dos destaques
-    const cards = document.querySelectorAll('.produtos-card');
-    let destaqueIndex = 0;
-
-    function showDestaqueSlide(i) {
-      const cardWidth = cards[0]?.offsetWidth || 300;
-      produtosTrack.style.transform = `translateX(-${i * (cardWidth + 20)}px)`;
-    }
-
-    setInterval(() => {
-      destaqueIndex = (destaqueIndex + 1) % cards.length;
-      showDestaqueSlide(destaqueIndex);
-    }, 4000);
+    // Carrossel automático dos destaques (somente após renderizar)
+    iniciarCarrosselLoop(produtosTrack);
 
   } catch (erro) {
     console.error("Erro ao carregar produtos.json:", erro);
@@ -54,5 +42,22 @@ setInterval(() => {
   showSlide(index);
 }, 4000);
 
+// Função fora do async, recebe o track como parâmetro
+function iniciarCarrosselLoop(produtosTrack) {
+  setInterval(() => {
+    const primeiro = produtosTrack.firstElementChild;
+    const larguraCard = primeiro.offsetWidth + 20;
 
+    produtosTrack.style.transition = 'transform 0.5s ease-in-out';
+    produtosTrack.style.transform = `translateX(-${larguraCard}px)`;
+
+    setTimeout(() => {
+      produtosTrack.style.transition = 'none';
+      produtosTrack.appendChild(primeiro);
+      produtosTrack.style.transform = 'translateX(0)';
+    }, 500);
+  }, 4000);
+}
+
+// Inicia o carregamento
 carregarProdutos();
