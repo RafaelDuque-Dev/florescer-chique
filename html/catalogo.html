@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <title>Catálogo | Florescer Chique</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/catalogo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>  
+    <img class="logo-header" src="../img/logo.png" alt="">
+    <p>Transforme seu visual com elegância e sofisticação</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- Seção de catálogo -->
+  <section class="section-catalogo">
+    <h2>Catálogo Completo</h2>
+
+    <!-- Filtros -->
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <select id="filtro-categoria">
+        <option value="todos">Todas as Categorias</option>
+        <option value="brincos">Brincos</option>
+        <option value="colares">Colares</option>
+        <option value="pulseiras">Pulseiras</option>
+        <option value="aneis">Anéis</option>
+      </select>
+
+      <select id="filtro-ordem">
+        <option value="">Ordenar por</option>
+        <option value="destaques">Destaques</option>
+        <option value="menor_preco">Menor Preço</option>
+        <option value="maior_preco">Maior Preço</option>
+      </select>
+    </div>
+
+    <!-- Produtos -->
+    <div id="catalogo-lista" class="grid"></div>
+  </section>
+
+  <footer>
+    <div>
+      <h2>Redes Sociais</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/florescerchique/" target="_blank" rel="noopener"><img src="../img/icons8-instagram-48.png" alt=""></a></li>
+        <li><a href="https://www.facebook.com/florescerchique" target="_blank" rel="noopener"><img src="../img/icons8-facebook-48.png" alt=""></a></li>
+        <li><a href="https://www.tiktok.com/@florescerchique" target="_blank" rel="noopener"><img src="../img/icons8-tiktok-48.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com/@florescerchique" target="_blank" rel="noopener"><img src="../img/icons8-youtube-48.png" alt=""></a></li>
+      </ul>
+    </div>
+    <p>&copy; 2025 Florescer Chique. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Rafael Duque</p>
+
+    <a class="whatsapp" href="https://wa.me/5599999999999" target="_blank" rel="noopener"><img src="../img/icons8-whatsapp-48.png" alt=""></a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>

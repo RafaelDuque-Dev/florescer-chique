@@ -1,6 +1,6 @@
 :root {
   /* Paleta de cores */
-  --color-rose-gold: #B76E79;
+  --color-rose-gold: #b86874;
   --color-creme-elegante: #FDF6F0;
   --color-verde-eucalipto: #7BA69D;
   --color-dourado: #D4AF37;
@@ -29,16 +29,15 @@ body {
 /* Cabeçalho */
 header {
   background-color: var(--color-rose-gold);
-  color: white;
-  padding: 5px;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
-.logo-header {
-  width: 170px;
+header img.logo-header {
+  max-width: 200px;
   height: auto;
-  display: inline-block;
 }
+
 
 header p {
   font-family: var(--font-text-alt);
@@ -60,6 +59,10 @@ nav a {
   color: var(--color-rose-gold);
   font-weight: bold;
   font-family: var(--font-text-alt);
+}
+
+nav a:hover {
+  color: var(--color-dourado);
 }
 
 /* Banner e Carrossel principal */
@@ -181,24 +184,24 @@ nav a {
 
 
 /* Seção padrão */
-.section {
+.section-sobre {
   padding: 2rem;
   max-width: 1200px;
   margin: auto;
 }
 
-.section h2 {
+.section-sobre h2 {
   text-align: center;
   font-family: var(--font-title-primary);
   color: var(--color-rose-gold);
   margin-bottom: 2rem;
 }
 
-/* Grid de produtos */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+.section-sobre p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-family: var(--font-text-primary);
 }
 
 /* Card de produto */
