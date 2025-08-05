@@ -5,7 +5,13 @@
     "categoria": "Brincos",
     "destaque": true,
     "preco": 49.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Um lindo brinco de pérola com banho dourado.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 2,

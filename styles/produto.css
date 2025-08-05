@@ -1,0 +1,85 @@
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+
+.detalhes-produto {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.galeria img {
+  width: 1200px;
+  border-radius: 10px;
+}
+
+.info {
+  max-width: 400px;
+}
+
+.botao-whatsapp {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #25d366;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.carrossel {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carrossel .imagens {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel .imagem-carrossel {
+  min-width: 100%;
+  display: none;
+}
+
+.carrossel .imagem-carrossel.ativa {
+  display: block;
+}
+
+.carrossel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carrossel .anterior {
+  left: 0;
+}
+
+.carrossel .proximo {
+  right: 0;
+}
+
+.botao-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}

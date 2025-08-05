@@ -63,5 +63,5 @@ function exibirProdutos(lista) {
 }
 
 function abrirDetalhes(id) {
-  window.location.href = `/produto.html?id=${id}`;
+  window.location.href = `/html/produto.html?id=${id}`;
 }

@@ -20,7 +20,7 @@
 }
 
 .card-body button {
-  background-color: #e29786;
+  background-color: #b86874;
   border: none;
   padding: 0.5rem 1rem;
   color: white;
@@ -32,7 +32,7 @@
 }
 
 .card-body button:hover {
-  background-color: #c8645d;
+  background-color: #814a52;
 }
 
 /* Filtros */
