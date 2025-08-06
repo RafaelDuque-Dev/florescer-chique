@@ -28,7 +28,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: var(--color-rose-gold);
+  background: radial-gradient(circle at center, #b86874 30%, #d8919c 60%, #f1d8d9 90%, #FDF6F0 100%);
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -198,8 +198,9 @@ nav a:hover {
 }
 
 .section-sobre p {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  padding-bottom: 30px;
   text-align: center;
   font-family: var(--font-text-primary);
 }
