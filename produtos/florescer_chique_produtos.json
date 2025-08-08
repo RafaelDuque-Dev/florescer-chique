@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nome": "Brinco Flor de Pérola",
-    "categoria": "Brincos",
+    "categoria": "brincos",
     "destaque": true,
     "preco": 49.9,
     "descricao": "Um lindo brinco de pérola com banho dourado.",
@@ -16,7 +16,7 @@
   {
     "id": 2,
     "nome": "Colar Coração Dourado",
-    "categoria": "Colares",
+    "categoria": "colares",
     "destaque": true,
     "preco": 79.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "nome": "Pulseira Riviera Prata",
-    "categoria": "Pulseiras",
+    "categoria": "pulseiras",
     "destaque": true,
     "preco": 89.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "nome": "Anel Ajustável de Cristal",
-    "categoria": "Anéis",
+    "categoria": "aneis",
     "destaque": false,
     "preco": 39.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -40,7 +40,7 @@
   {
     "id": 5,
     "nome": "Brinco Gota de Zircônia",
-    "categoria": "Brincos",
+    "categoria": "brincos",
     "destaque": true,
     "preco": 59.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -48,7 +48,7 @@
   {
     "id": 6,
     "nome": "Colar Mandala da Fé",
-    "categoria": "Colares",
+    "categoria": "colares",
     "destaque": false,
     "preco": 99.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "nome": "Pulseira Elos Finos",
-    "categoria": "Pulseiras",
+    "categoria": "pulseiras",
     "destaque": false,
     "preco": 69.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -64,7 +64,7 @@
   {
     "id": 8,
     "nome": "Anel Solitário Luxo",
-    "categoria": "Anéis",
+    "categoria": "aneis",
     "destaque": true,
     "preco": 119.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -72,7 +72,7 @@
   {
     "id": 9,
     "nome": "Brinco Ponto de Luz",
-    "categoria": "Brincos",
+    "categoria": "brincos",
     "destaque": false,
     "preco": 29.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
@@ -80,7 +80,7 @@
   {
     "id": 10,
     "nome": "Colar Pérola Elegance",
-    "categoria": "Colares",
+    "categoria": "colares",
     "destaque": false,
     "preco": 109.9,
     "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"

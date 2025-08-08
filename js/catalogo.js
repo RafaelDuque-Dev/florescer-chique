@@ -23,11 +23,11 @@ function configurarFiltros() {
 }
 
 function filtrar() {
-  const categoria = document.getElementById("filtro-categoria").value;
+  const categoria = document.getElementById("filtro-categoria").value.toLowerCase(); // transforma o valor selecionado em minúsculo
   const ordem = document.getElementById("filtro-ordem").value;
 
-  produtosFiltrados = produtos.filter(produto => {
-    return categoria === "todos" || produto.categoria === categoria;
+  let produtosFiltrados = produtos.filter(p => {
+    return categoria === "todos" || p.categoria.toLowerCase() === categoria;
   });
 
   if (ordem === "maior_preco") {

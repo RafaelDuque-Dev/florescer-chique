@@ -15,6 +15,7 @@ async function carregarProdutos() {
         <div class="card-body">
           <h3>${produto.nome}</h3>
           <p><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
+          <button onclick="abrirDetalhes('${produto.id}')">Ver detalhes</button>
         </div>
       `;
       produtosTrack.appendChild(card);
@@ -56,8 +57,14 @@ function iniciarCarrosselLoop(produtosTrack) {
       produtosTrack.appendChild(primeiro);
       produtosTrack.style.transform = 'translateX(0)';
     }, 500);
-  }, 4000);
+  }, 2000);
+}
+
+function abrirDetalhes(id) {
+  window.location.href = `/html/produto.html?id=${id}`;
 }
 
 // Inicia o carregamento
 carregarProdutos();
+
+

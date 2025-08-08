@@ -1,5 +1,18 @@
 /* Florescer Chique - Catálogo CSS */
 
+.filtros {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+
+}
+
 .section-catalogo {
   max-width: 1200px;
   margin: 1rem auto;
