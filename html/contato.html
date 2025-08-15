@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <title>Catálogo | Florescer Chique</title>
   <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/catalogo.css">
+  <link rel="stylesheet" href="../styles/contato.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,32 +22,24 @@
     <a href="contato.html">Contato</a>
   </nav>
 
-  <!-- Seção de catálogo -->
-  <section class="section-catalogo">
-    <h2 class="subtitle">Catálogo Completo</h2>
+  <section class="section-contato">
+    <div class="contato-card">
+      <h2>Vamos Conversar? 💬</h2>
+      <p>Não temos endereço físico... Mas estamos online para você!</p>
 
-    <!-- Filtros -->
-    <div class="filtros">
-      <label for="filtro-categoria">Filtrar por Categoria</label>
-      <select id="filtro-categoria">
-        <option value="todos">Todas as Categorias</option>
-        <option value="brincos">Brincos</option>
-        <option value="colares">Colares</option>
-        <option value="pulseiras">Pulseiras</option>
-        <option value="aneis">Anéis</option>
-      </select>
+      <div class="botoes-contato">
+        <a href="https://wa.me/5599999999999" target="_blank" rel="noopener" class="btn-whatsapp">
+          Falar no WhatsApp
+        </a>
+        <a href="https://instagram.com/seuperfil" target="_blank" rel="noopener"class="btn-instagram">
+          Mandar DM no Instagram
+        </a>
+      </div>
 
-      <label for="filtro-ordem">Ordenar</label>
-      <select id="filtro-ordem">
-        <option value="">Ordenar por</option>
-        <option value="destaques">Destaques</option>
-        <option value="menor_preco">Menor Preço</option>
-        <option value="maior_preco">Maior Preço</option>
-      </select>
+      <div class="decoracao">
+        <p>"Cada mensagem é como uma semente. Envie a sua e vamos florescer juntos."</p>
+      </div>
     </div>
-
-    <!-- Produtos -->
-    <div id="catalogo-lista" class="grid"></div>
   </section>
 
   <footer>

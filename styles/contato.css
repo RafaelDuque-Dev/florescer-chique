@@ -1,0 +1,70 @@
+.section-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.contato-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.contato-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contato-card p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.botoes-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 90%;
+  margin: 0 auto;
+}
+
+.botoes-contato a {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  color: white;
+}
+
+
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.btn-instagram:hover, .btn-whatsapp:hover {
+  filter: brightness(1.1);
+}
+
+.decoracao {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
