@@ -19,7 +19,13 @@
     "categoria": "colares",
     "destaque": true,
     "preco": 79.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 3,
@@ -27,7 +33,13 @@
     "categoria": "pulseiras",
     "destaque": true,
     "preco": 89.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 4,
@@ -35,7 +47,13 @@
     "categoria": "aneis",
     "destaque": false,
     "preco": 39.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 5,
@@ -43,7 +61,13 @@
     "categoria": "brincos",
     "destaque": true,
     "preco": 59.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 6,
@@ -51,7 +75,13 @@
     "categoria": "colares",
     "destaque": false,
     "preco": 99.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 7,
@@ -59,7 +89,13 @@
     "categoria": "pulseiras",
     "destaque": false,
     "preco": 69.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 8,
@@ -67,7 +103,13 @@
     "categoria": "aneis",
     "destaque": true,
     "preco": 119.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 9,
@@ -75,7 +117,13 @@
     "categoria": "brincos",
     "destaque": false,
     "preco": 29.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   },
   {
     "id": 10,
@@ -83,6 +131,12 @@
     "categoria": "colares",
     "destaque": false,
     "preco": 109.9,
-    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg"
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+    "imagens": [
+      "https://blog.donadivasemijoias.com.br/wp-content/uploads/2020/11/Semijoias-e-seus-cuidados-veja-4-deles.jpg",
+      "https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg",
+      "https://images.pexels.com/photos/12427696/pexels-photo-12427696.jpeg"
+    ]
   }
 ]
