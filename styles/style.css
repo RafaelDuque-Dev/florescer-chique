@@ -38,7 +38,6 @@ header img.logo-header {
   height: auto;
 }
 
-
 header p {
   font-family: var(--font-text-alt);
   font-size: 1.2em;
@@ -55,6 +54,7 @@ nav {
 
 nav a {
   margin: 0 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: var(--color-rose-gold);
   font-weight: bold;
@@ -79,7 +79,7 @@ nav a:hover {
   background-image: url('');
   background-size: cover;
   background-position: center;
-  height: 620px;
+  height: 630px;
   min-height: 500px;
   max-height: 700px;
   z-index: 1;
@@ -175,7 +175,6 @@ nav a:hover {
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
-
 }
 
 .produtos-card:hover {
@@ -189,7 +188,6 @@ nav a:hover {
   text-align: center;
   margin-top: 2rem;
 }
-
 
 /* Seção padrão */
 .section-sobre {
@@ -249,7 +247,7 @@ nav a:hover {
   font-size: var(--font-size-text);
 }
 
-
+/* Rodapé */
 footer {
   background-color: var(--color-rose-gold);
   color: white;
@@ -279,7 +277,6 @@ footer ul li a img:hover {
   transform: scale(1.09);
 }
 
-
 /* Botão WhatsApp */
 .whatsapp {
   position: fixed;
@@ -303,18 +300,129 @@ footer ul li a img:hover {
   transform: scale(1.1);
 }
 
+/* Responsividade geral */
+@media (max-width: 1024px) {
+  header img.logo-header {
+    max-width: 150px;
+  }
 
-/* Responsivo */
-@media (max-width: 700px) {
+  nav a {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .destaque-banner {
+    width: 85%;
+    padding: 1.5rem;
+  }
+
+  .section-sobre {
+    padding: 1.5rem;
+  }
+}
+
+/* Tablets e celulares */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  nav {
+    padding: 0.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+  }
 
   .banner {
-    min-height: 730px;
-    
+    height: 900px;
+    min-height: 900px;
+  }
+
+  .destaque-banner {
+    width: 90%;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 
   .produtos-card {
-    min-width: 80vw;
-    max-width: 90vw;
+    min-width: 75vw;
+    max-width: 85vw;
   }
 
+  .section-sobre h2 {
+    font-size: 1.4rem;
+  }
+
+  .section-sobre p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .card-body h3 {
+    font-size: 1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
 }
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  header img.logo-header {
+    max-width: 120px;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+  }
+
+  .banner {
+    height: 700px;
+    min-height: 700px;
+  }
+
+  .destaque-banner {
+    width: 95%;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .destaque-frase {
+    font-size: 1.1em;
+  }
+
+  .produtos-card {
+    min-width: 85vw;
+    max-width: 95vw;
+  }
+
+  .whatsapp {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+

@@ -53,3 +53,13 @@ select:focus {
   outline: none;
   border-color: #e29786;
 }
+
+/* Celulares pequenos */
+@media (max-width: 768px) {
+  .filtros {
+    flex-direction: column;
+  }
+  select {
+    margin: 0.5rem 0;
+  }
+}

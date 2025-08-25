@@ -44,9 +44,10 @@ function exibirDetalhesProduto(produto) {
 
   // Informações
   infoContainer.innerHTML = `
-    <h2>${produto.nome}</h2>
-    <p>${produto.descricao}</p>
-    <p><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
+    <p class="produto-id">Codigo: ${produto.id}</p>
+    <h2 class="produto-titulo">${produto.nome}</h2>
+    <p class="produto-descricao">${produto.descricao}</p>
+    <p class="produto-preco"><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
     <a class="botao-whatsapp" href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto:%20${encodeURIComponent(produto.nome)}" target="_blank">
       Falar no WhatsApp
     </a>
