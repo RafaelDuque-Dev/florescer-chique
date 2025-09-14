@@ -138,5 +138,20 @@
       "../produtos/produtos-img/id1001-2.jpg",
       "../produtos/produtos-img/id1001-3.jpg"
     ]
+  },
+    {
+    "id": 2003,
+    "nome": "Colar Pérola Elegance",
+    "categoria": "colares",
+    "destaque": false,
+    "preco": 109.9,
+    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
+    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagens": [
+      "../produtos/produtos-img/id1001-1.jpg",
+      "../produtos/produtos-img/id1001-2.jpg",
+      "../produtos/produtos-img/id1001-3.jpg"
+    ]
   }
+
 ]
