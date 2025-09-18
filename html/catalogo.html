@@ -10,16 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>  
-    <img class="logo-header" src="../img/logo.png" alt="">
+  <header> 
+    <img class="logo-header" src="/img/logo.png" alt="Logotipo Florescer Chique">
     <p>Transforme seu visual com elegância e sofisticação</p>
   </header>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="catalogo.html">Catálogo</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
   </nav>
 
   <!-- Seção de catálogo -->
@@ -47,7 +49,14 @@
     </div>
 
     <!-- Produtos -->
-    <div id="catalogo-lista" class="grid"></div>
+    <div id="catalogo-lista" class="grid">
+      <!-- Exemplo de produto -->
+      <div class="produto">
+        <img src="../img/produto-exemplo.jpg" alt="Produto Exemplo">
+        <h3>Brinco Elegante</h3>
+        <p>R$ 89,90</p>
+      </div>
+    </div>
   </section>
 
   <footer>

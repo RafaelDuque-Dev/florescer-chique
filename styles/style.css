@@ -44,26 +44,35 @@ header p {
   color: var(--color-creme-elegante);
 }
 
+
 /* Navegação */
-nav {
-  background-color: #fff;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+nav { 
+  background-color: #fff; 
+  padding: 0.75rem; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
 nav a {
-  margin: 0 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--color-rose-gold);
-  font-weight: bold;
+  font-weight: 600;
   font-family: var(--font-text-alt);
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: var(--color-dourado);
 }
+
 
 .subtitle {
   text-align: center;

@@ -3,68 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- SEO -->
+  <meta name="description" content="Catálogo Florescer Chique - Moda elegante e sofisticada para transformar seu visual com charme e estilo.">
+  <meta name="author" content="Florescer Chique">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph para redes sociais -->
+  <meta property="og:title" content="Catálogo | Florescer Chique">
+  <meta property="og:description" content="Transforme seu visual com elegância e sofisticação.">
+  <meta property="og:image" content="/img/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://florescerchique.com.br/catalogo.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Título -->
   <title>Catálogo | Florescer Chique</title>
+
+  <!-- CSS -->
+  <link rel="preload" href="styles/style.css" as="style">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/catalogo.css">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
-  
 </head>
 <body>
   <header> 
-    <img class="logo-header" src="/img/logo.png" alt="">
+    <img class="logo-header" src="/img/logo.png" alt="Logotipo Florescer Chique">
     <p>Transforme seu visual com elegância e sofisticação</p>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="html/catalogo.html">Catálogo</a>
-    <a href="html/sobre.html">Sobre</a>
-    <a href="html/contato.html">Contato</a>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="html/catalogo.html" aria-current="page">Catálogo</a></li>
+      <li><a href="html/sobre.html">Sobre</a></li>
+      <li><a href="html/contato.html">Contato</a></li>
+    </ul>
   </nav>
 
-<div class="banner">
-  <div class="carousel">
-    <div class="carousel-track">
-      <div class="carousel-item">
-        <img src="https://images.pexels.com/photos/26741252/pexels-photo-26741252.jpeg" alt="Slide 1">
+  <main>
+    <div class="banner">
+      <div class="carousel" aria-label="Galeria de imagens em destaque">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/26741252/pexels-photo-26741252.jpeg" alt="Modelo vestindo vestido elegante">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/5469695/pexels-photo-5469695.jpeg" alt="Modelo com look sofisticado">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/5658856/pexels-photo-5658856.jpeg" alt="Detalhes de acessórios de moda">
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://images.pexels.com/photos/5469695/pexels-photo-5469695.jpeg" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.pexels.com/photos/5658856/pexels-photo-5658856.jpeg" alt="Slide 3">
-      </div>
-    </div>
-  </div>
-  <section class="section destaque-banner" id="destaques">
-    <h2 class="subtitle">Destaques da Semana</h2>
 
-    <div class="produtos-carousel">
-      <div class="produtos-track" id="produtos-track"><!-- Cards aqui --></div>
+      <section class="section destaque-banner" id="destaques">
+        <h2 class="subtitle">Destaques da Semana</h2>
+        <div class="produtos-carousel">
+          <div class="produtos-track" id="produtos-track"><!-- Cards dinâmicos --></div>
+        </div>
+        <p class="destaque-frase">Floresça com graça, irradiando beleza e leveza em cada instante.</p>
+      </section>
     </div>
-    <p class="destaque-frase" >Floresça com graça, irradiando beleza e leveza em cada instante.</p>
-  </section>
-</div>
-
+  </main>
 
   <footer id="contato">
     <div>
       <h2>Redes Sociais</h2>
       <ul>
-        <li><a href="https://www.instagram.com/florescerchique/" target="_blank" rel="noopener"><img src="img/icons8-instagram-48.png" alt=""></a></li>
-        <li><a href="https://www.facebook.com/florescerchique" target="_blank" rel="noopener"><img src="img/icons8-facebook-48.png" alt=""></a></li>
-        <li><a href="https://www.tiktok.com/@florescerchique" target="_blank" rel="noopener"><img src="img/icons8-tiktok-48.png" alt="">
-        </a></li>
-        <li><a href="https://www.youtube.com/@florescerchique" target="_blank" rel="noopener"><img src="img/icons8-youtube-48.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com/florescerchique/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/icons8-instagram-48.png" alt="Instagram"></a></li>
+        <li><a href="https://www.facebook.com/florescerchique" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/icons8-facebook-48.png" alt="Facebook"></a></li>
+        <li><a href="https://www.tiktok.com/@florescerchique" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="img/icons8-tiktok-48.png" alt="TikTok"></a></li>
+        <li><a href="https://www.youtube.com/@florescerchique" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="img/icons8-youtube-48.png" alt="YouTube"></a></li>
       </ul>
     </div>
     <p>&copy; 2025 Florescer Chique. Todos os direitos reservados.</p>
     <p>Desenvolvido por Rafael Duque</p>
 
-    <a class="whatsapp" href="https://wa.me/5599999999999" target="_blank" rel="noopener"><img src="img/icons8-whatsapp-48.png" alt=""></a>
+    <a class="whatsapp" href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer" aria-label="Converse pelo WhatsApp">
+      <img src="img/icons8-whatsapp-48.png" alt="WhatsApp">
+    </a>
   </footer>
 
-  <script src="app.js"></script>
+  <!-- Scripts -->
+  <script src="app.js" defer></script>
 </body>
 </html>
