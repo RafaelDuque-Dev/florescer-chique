@@ -1,63 +1,105 @@
+@import url("style.css");
+
+/* =========================
+   LAYOUT PRINCIPAL
+   ========================= */
 main {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-
 }
 
+/* =========================
+   CONTAINER DO PRODUTO
+   ========================= */
 .detalhes-produto {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
-  gap: 2rem;
+  gap: 2.5rem;
+  max-width: 1200px;
 }
 
+/* =========================
+   GALERIA / IMAGEM
+   ========================= */
 .galeria img {
-  width: 1200px;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  border: 1px solid var(--color-borda-suave);
 }
 
+/* =========================
+   INFO DO PRODUTO
+   ========================= */
 .info {
-  max-width: 400px;
+  max-width: 420px;
 }
 
+/* ID / SKU */
 .produto-id {
-  font-size: 1rem;
-  color: #888;
+  font-size: 0.9rem;
+  font-family: var(--font-text-alt);
+  color: var(--color-destaque);
   margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
 }
+
+/* TÍTULO */
 .produto-titulo {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-family: var(--font-title-primary);
+  color: var(--color-primaria);
   margin-bottom: 1rem;
-  color: #b86874;
 }
+
+/* DESCRIÇÃO */
 .produto-descricao {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-family: var(--font-text-primary);
+  color: var(--color-texto);
   margin-bottom: 1.5rem;
 }
+
+/* PREÇO */
 .produto-preco {
-  font-size: 1.5rem;
-  color: #b86874;
+  font-size: 1.6rem;
+  font-family: var(--font-title-alt);
+  color: var(--color-terciaria);
   margin-bottom: 1.5rem;
 }
 
+/* =========================
+   BOTÃO WHATSAPP
+   ========================= */
 .botao-whatsapp {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #25d366;
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: var(--font-text-alt);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.botao-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   CARROSSEL
+   ========================= */
 .carrossel {
   position: relative;
   max-width: 550px;
-  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -75,59 +117,71 @@ main {
   display: block;
 }
 
+/* BOTÕES DO CARROSSEL */
 .carrossel button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.4);
-  color: white;
+  background-color: rgba(46, 32, 32, 0.6);
+  color: var(--color-secundaria);
   border: none;
-  padding: 10px;
+  padding: 10px 14px;
   cursor: pointer;
+  border-radius: 50%;
   z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.carrossel button:hover {
+  background-color: var(--color-primaria);
 }
 
 .carrossel .anterior {
-  left: 0;
+  left: 10px;
 }
 
 .carrossel .proximo {
-  right: 0;
+  right: 10px;
 }
 
-.botao-whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
 
-/* Tablets e celulares */
+/* Tablets */
 @media (max-width: 768px) {
   .detalhes-produto {
     flex-direction: column;
     align-items: center;
-  }
-
-  .galeria img {
-    width: 100%;
+    padding: 1.5rem;
   }
 
   .info {
     max-width: 100%;
+    text-align: center;
+  }
+
+  .produto-preco {
+    font-size: 1.4rem;
   }
 }
 
 /* Celulares pequenos */
 @media (max-width: 480px) {
   .produto-titulo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+
+  .produto-descricao {
+    font-size: 0.95rem;
   }
 
   .produto-preco {
     font-size: 1.3rem;
+  }
+
+  .botao-whatsapp {
+    width: 100%;
+    justify-content: center;
   }
 }

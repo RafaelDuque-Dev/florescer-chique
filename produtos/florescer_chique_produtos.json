@@ -6,11 +6,11 @@
     "destaque": true,
     "preco": 49.9,
     "descricao": "Um lindo brinco de pérola com banho dourado.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -20,11 +20,11 @@
     "destaque": true,
     "preco": 79.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -34,11 +34,11 @@
     "destaque": true,
     "preco": 89.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -48,11 +48,11 @@
     "destaque": false,
     "preco": 39.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -62,25 +62,24 @@
     "destaque": true,
     "preco": 59.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
     "id": 2002,
-    "nome": "Colar Mandala da Fé",
+    "nome": "Cordão baiano Dourado",
     "categoria": "colares",
-    "destaque": false,
-    "preco": 99.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "destaque": true,
+    "preco": 25.99,
+    "descricao": "Colar delicado que deslumbra em qualquer ocasião.",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png"
     ]
   },
   {
@@ -90,11 +89,11 @@
     "destaque": false,
     "preco": 69.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -104,11 +103,11 @@
     "destaque": true,
     "preco": 119.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -118,11 +117,11 @@
     "destaque": false,
     "preco": 29.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
   {
@@ -132,11 +131,11 @@
     "destaque": false,
     "preco": 109.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   },
     {
@@ -146,11 +145,11 @@
     "destaque": false,
     "preco": 109.9,
     "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id1001-1.jpg",
+    "imagem": "../produtos/produtos-img/id2002-1.png",
     "imagens": [
-      "../produtos/produtos-img/id1001-1.jpg",
-      "../produtos/produtos-img/id1001-2.jpg",
-      "../produtos/produtos-img/id1001-3.jpg"
+      "../produtos/produtos-img/id2002-1.png",
+      "../produtos/produtos-img/id2002-2.png",
+      "../produtos/produtos-img/id2002-1.png"
     ]
   }
 

@@ -1,9 +1,9 @@
 :root {
-  /* Paleta de cores */
-  --color-rose-gold: #b86874;
-  --color-creme-elegante: #FDF6F0;
-  --color-verde-eucalipto: #7BA69D;
-  --color-dourado: #D4AF37;
+  /* Nova Paleta Padronizada baseada no Logo */
+  --color-primaria: #424242;    /* Marrom Profundo (Fundo do logo / Cabeçalho) */
+  --color-secundaria: #F5F5F0;  /* Creme Elegante (Fundo do site) */
+  --color-terciaria: #748873;   /* Dourado Vintage (Links e Destaques principais) */
+  --color-destaque: #7A7A73;    /* Bronze/Ouro Escuro (Títulos e detalhes de hover) */
 
   /* Fontes */
   --font-title-primary: 'Playfair Display', serif;
@@ -22,35 +22,35 @@
 body {
   margin: 0;
   font-family: var(--font-text-primary);
-  background-color: var(--color-creme-elegante);
+  background-color: var(--color-secundaria);
   color: #333;
 }
 
 /* Cabeçalho */
 header {
-  background: var(--color-rose-gold);
+  background: var(--color-primaria);
   text-align: center;
   padding: 2rem 1rem;
 }
 
 header img.logo-header {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
 }
 
 header p {
   font-family: var(--font-text-alt);
   font-size: 1.2em;
-  color: var(--color-creme-elegante);
+  color: var(--color-secundaria);
 }
-
 
 /* Navegação */
 nav { 
   background-color: #fff; 
-  padding: 0.75rem; 
+  padding: 1rem; 
   text-align: center; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+}
 
 nav ul {
   list-style: none;
@@ -58,43 +58,43 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: var(--color-rose-gold);
+  color: var(--color-primaria);
   font-weight: 600;
   font-family: var(--font-text-alt);
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: var(--color-dourado);
+  color: var(--color-destaque);
 }
-
 
 .subtitle {
   text-align: center;
   font-family: var(--font-title-primary);
-  color: var(--color-rose-gold);
+  color: var(--color-primaria);
   font-size: var(--font-size-subtitle);
   margin-bottom: 2rem;
 }
 
 /* Banner e Carrossel principal */
 .banner {
-  position: relative;
-  background-image: url('');
   background-size: cover;
   background-position: center;
-  height: 630px;
-  min-height: 500px;
-  max-height: 700px;
-  z-index: 1;
-  overflow: hidden;
+  position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  min-height: 700px;
+  max-height: 850px;
+  overflow: hidden;
 }
 
 /* Efeito translúcido rose gold */
@@ -146,15 +146,24 @@ nav a:hover {
 .destaque-banner,
 .section#destaques {
   position: absolute;
-  top: 20px;
+  top: 60px; /* Ajustado */
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
-  background: rgba(255,255,255,0.85);
+  width: min(1200px, 70%);
+  background: rgba(255,255,255,0.88);
   z-index: 10;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   padding: 2rem;
   border-radius: 16px;
+}
+
+.destaque-frase {
+  font-family: var(--font-title-alt);
+  font-size: 1.5em;
+  color: var(--color-primaria);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .produtos-carousel {
@@ -170,6 +179,8 @@ nav a:hover {
   display: flex;
   transition: transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
   will-change: transform;
+  padding: 10px 0; /* Espaço para a sombra não cortar */
+  margin-bottom: 20px;
 }
 
 .produtos-card {
@@ -184,68 +195,33 @@ nav a:hover {
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 6;
 }
 
 .produtos-card:hover {
   transform: scale(1.03);
 }
 
-.destaque-frase {
-  font-family: var(--font-title-alt);
-  font-size: 1.5em;
-  color: var(--color-rose-gold);
-  text-align: center;
-  margin-top: 2rem;
-}
-
-/* Seção padrão */
-.section-sobre {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section-sobre h2 {
-  text-align: center;
-  font-family: var(--font-title-primary);
-  color: var(--color-rose-gold);
-  margin-bottom: 2rem;
-}
-
-.section-sobre p {
-  max-width: 900px;
-  margin: auto;
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: var(--font-text-primary);
-}
-
-/* Card de produto */
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
+/* Imagens dentro dos cards de produtos */
+.produtos-card img,
 .card img {
   width: 100%;
-  height: 220px;
+  height: 250px; /* Altura padrão desktop */
   object-fit: cover;
+  object-position: top center;
 }
 
 .card-body {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-body h3 {
   font-size: 1.2rem;
-  color: var(--color-verde-eucalipto);
+  color: var(--color-terciaria);
   margin: 0 0 0.5rem;
   font-family: var(--font-title-alt);
 }
@@ -256,19 +232,42 @@ nav a:hover {
   font-size: var(--font-size-text);
 }
 
+/* Seção Sobre */
+.section-sobre {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-sobre h2 {
+  text-align: center;
+  font-family: var(--font-title-primary);
+  color: var(--color-primaria);
+  margin-bottom: 2rem;
+}
+
+.section-sobre p {
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: var(--font-text-primary);
+  line-height: 1.6;
+}
+
 /* Rodapé */
 footer {
-  background-color: var(--color-rose-gold);
+  background-color: var(--color-primaria);
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   position: relative;
 }
 
 footer ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 
 footer ul li {
@@ -282,14 +281,6 @@ footer ul li a {
   font-family: var(--font-text-alt);
 }
 
-footer ul li a img:hover {
-  transform: scale(1.09);
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
 footer a:hover {
   text-decoration: underline;
 }
@@ -302,8 +293,8 @@ footer a:hover {
   background-color: #25D366;
   color: white;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -311,135 +302,106 @@ footer a:hover {
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 99;
+  transition: transform 0.3s;
 }
 
 .whatsapp:hover {
   transform: scale(1.1);
 }
 
-/* Responsividade geral */
+/* =========================================
+   RESPONSIVIDADE (Tablets e Celulares)
+   ========================================= */
+
 @media (max-width: 1024px) {
   header img.logo-header {
-    max-width: 150px;
+    max-width: 200px;
   }
-
-  nav a {
-    margin: 0 0.5rem;
-    font-size: 1.1rem;
-  }
-
+  
   .destaque-banner {
     width: 85%;
-    padding: 1.5rem;
-  }
-
-  .section-sobre {
-    padding: 1.5rem;
   }
 }
 
-/* Tablets e celulares */
+/* Tablets (até 768px) */
 @media (max-width: 768px) {
   header {
     padding: 1.5rem 1rem;
   }
 
-  header p {
-    font-size: 1em;
-  }
-
-  nav {
-    padding: 0.5rem;
-  }
-
   nav a {
-    display: inline-block;
-    margin: 0.3rem 0.5rem;
-    font-size: 1.1rem;
-  }
-
-  .banner {
-    height: 900px;
-    min-height: 900px;
-  }
-
-  .destaque-banner {
-    width: 90%;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  .produtos-card {
-    min-width: 75vw;
-    max-width: 85vw;
-  }
-
-  .section-sobre h2 {
-    font-size: 1.4rem;
-  }
-
-  .section-sobre p {
-    font-size: 0.95rem;
-    padding: 0 1rem;
-  }
-
-  .card-body h3 {
+    margin: 0 0.5rem;
     font-size: 1rem;
   }
 
-  .card-body p {
-    font-size: 0.9rem;
+  /* Ajuste crucial para o banner no mobile */
+  .banner {
+    height: auto; 
+    min-height: 100vh; /* Ocupa a tela mas permite crescer */
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    align-items: flex-start; /* Alinha o conteúdo mais para cima */
+  }
+
+  /* Ajuste do container branco no mobile */
+  .destaque-banner,
+  .section#destaques {
+    position: relative; /* Remove o absolute para fluir melhor */
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+
+  /* Card do produto no mobile */
+  .produtos-card {
+    min-width: 75vw;
+    max-width: 75vw; /* Garante que caiba na tela */
+    margin: 0 10px;
+  }
+  
+  /* A CORREÇÃO DA FOTO GIGANTE: */
+  .produtos-card img,
+  .card img {
+    height: 350px !important; /* Altura fixa para não estourar */
+    object-fit: cover; /* Corta a imagem elegantemente */
+    object-position: top center; /* Foca no rosto/joia */
+  }
+
+  .section-sobre {
+    padding: 2rem 1.5rem;
   }
 }
 
-/* Celulares pequenos */
+/* Celulares Pequenos (até 480px) */
 @media (max-width: 480px) {
   header img.logo-header {
-    max-width: 120px;
-  }
-
-  header p {
-    font-size: 0.9em;
+    max-width: 140px;
   }
 
   nav {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1.1rem;
-  }
-
-  .banner {
-    height: 700px;
-    min-height: 700px;
-  }
-
-  .destaque-banner {
-    width: 95%;
-    padding: 0.8rem;
-    font-size: 0.85rem;
+    gap: 0.5rem;
   }
 
   .destaque-frase {
-    font-size: 1.1em;
+
+    font-size: 1.2rem;
   }
 
-  .produtos-card {
-    min-width: 85vw;
-    max-width: 95vw;
+  /* Ajuste fino para telas muito pequenas */
+  .produtos-card img,
+  .card img {
+    height: 300px !important; /* Um pouco menor para telas pequenas */
   }
 
   .whatsapp {
-    width: 55px;
-    height: 55px;
-    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
     bottom: 15px;
     right: 15px;
   }
 }
-
-
