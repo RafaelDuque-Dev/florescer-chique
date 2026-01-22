@@ -94,6 +94,27 @@ main {
   box-shadow: 0 12px 28px rgba(0,0,0,0.3);
 }
 
+.acoes-produto {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.botao-sacola {
+  background-color: #6b7f6a;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.botao-sacola:hover {
+  background-color: #556a55;
+}
+
 /* =========================
    CARROSSEL
    ========================= */
