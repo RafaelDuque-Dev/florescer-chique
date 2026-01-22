@@ -67,12 +67,6 @@ function exibirDetalhesProduto(produto) {
         data-preco="${produto.preco}">
         👜 Adicionar à sacola
       </button>
-
-      <a class="botao-whatsapp"
-        href="https://wa.me/${WHATSAPP_NUMERO}?text=Olá!%20Gostaria%20do%20produto:%20${encodeURIComponent(produto.nome)}%20|%20Código:%20${encodeURIComponent(produto.id)}"
-        target="_blank">
-        Falar no WhatsApp
-      </a>
     </div>
   `;
 

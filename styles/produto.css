@@ -24,7 +24,11 @@ main {
    ========================= */
 .galeria img {
   width: 100%;
-  max-width: 550px;
+  max-width: 580px; /* Mantém o limite de largura que você já tinha */
+  height: 550px;    /* Define uma altura padrão para todas as imagens */
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer, cortando as bordas se necessário */
+  
+  /* Seus estilos originais preservados */
   border-radius: 16px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
   border: 1px solid var(--color-borda-suave);
@@ -74,25 +78,6 @@ main {
 /* =========================
    BOTÃO WHATSAPP
    ========================= */
-.botao-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: #25D366;
-  color: #ffffff;
-  padding: 0.75rem 1.4rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: var(--font-text-alt);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.botao-whatsapp:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
-}
 
 .acoes-produto {
   display: flex;
@@ -103,7 +88,9 @@ main {
 
 .botao-sacola {
   background-color: #6b7f6a;
-  color: #fff;
+  color: var(--color-secundaria);
+  font-family: var(--font-text-primary);
+  font-size: 0.9rem;
   border: none;
   padding: 10px 14px;
   border-radius: 6px;
@@ -113,6 +100,8 @@ main {
 
 .botao-sacola:hover {
   background-color: #556a55;
+    transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
 }
 
 /* =========================
@@ -189,6 +178,10 @@ main {
 
 /* Celulares pequenos */
 @media (max-width: 480px) {
+  .galeria img {
+    height: 320px; /* Altura menor para telas pequenas */
+    border-radius: 12px; /* Opcional: bordas levemente menores no mobile */
+  }
   .produto-titulo {
     font-size: 1.5rem;
   }
@@ -201,7 +194,7 @@ main {
     font-size: 1.3rem;
   }
 
-  .botao-whatsapp {
+  .botao-sacola {
     width: 100%;
     justify-content: center;
   }

@@ -1,3 +1,4 @@
+@import url("style.css");
 /* ===============================
    SACOLA – FLORESCER CHIQUE
 ================================ */
@@ -7,6 +8,13 @@ body {
   background-color: #faf9f7;
   color: #333;
 }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #4a4a4a;
+  padding-bottom: 30px;
+}
+
 
 /* Container principal */
 .sacola-container {
