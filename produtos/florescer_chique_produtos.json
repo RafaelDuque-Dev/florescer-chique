@@ -1,156 +1,151 @@
 [
   {
-    "id": 1001,
-    "nome": "Brinco Flor de Pérola",
+    "id": "BR92369",
+    "nome": "Brinco Estrela Listrado - Folhado a Ouro",
     "categoria": "brincos",
     "destaque": true,
-    "preco": 49.9,
-    "descricao": "Um lindo brinco de pérola com banho dourado.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
+    "preco": 25.00,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/BR92369-1.jpeg",
     "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
+      "../produtos/produtos-img/BR92369-1.jpeg",
+      "../produtos/produtos-img/BR92369-2.jpeg"
     ]
   },
   {
-    "id": 2001,
-    "nome": "Colar Coração Dourado",
-    "categoria": "colares",
-    "destaque": true,
-    "preco": 79.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
-    "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
-    ]
-  },
-  {
-    "id": 3001,
-    "nome": "Pulseira Riviera Prata",
-    "categoria": "pulseiras",
-    "destaque": true,
-    "preco": 89.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
-    "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
-    ]
-  },
-  {
-    "id": 4001,
-    "nome": "Anel Ajustável de Cristal",
-    "categoria": "aneis",
-    "destaque": false,
-    "preco": 39.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
-    "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
-    ]
-  },
-  {
-    "id": 1002,
-    "nome": "Brinco Gota de Zircônia",
+    "id": "BR92452",
+    "nome": "Brinco Inspiração VG Cravejado - Folhado a Ouro",
     "categoria": "brincos",
     "destaque": true,
-    "preco": 59.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
+    "preco": 25.00,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/BR92452-2.jpeg",
     "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
+      "../produtos/produtos-img/BR92452-1.jpeg",
+      "../produtos/produtos-img/BR92452-2.jpeg"
     ]
   },
   {
-    "id": 2002,
-    "nome": "Cordão baiano Dourado",
-    "categoria": "colares",
-    "destaque": true,
-    "preco": 25.99,
-    "descricao": "Colar delicado que deslumbra em qualquer ocasião.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
-    "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png"
-    ]
-  },
-  {
-    "id": 3002,
-    "nome": "Pulseira Elos Finos",
-    "categoria": "pulseiras",
-    "destaque": false,
-    "preco": 69.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
-    "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
-    ]
-  },
-  {
-    "id": 4002,
-    "nome": "Anel Solitário Luxo",
-    "categoria": "aneis",
-    "destaque": true,
-    "preco": 119.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
-    "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
-    ]
-  },
-  {
-    "id": 1003,
-    "nome": "Brinco Ponto de Luz",
+    "id": "BR92454",
+    "nome": "Brinco Gota Cravejada - Folhado a Ouro",
     "categoria": "brincos",
     "destaque": false,
-    "preco": 29.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
+    "preco": 25.00,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/BR92454-1.jpeg",
     "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
+      "../produtos/produtos-img/BR92454-1.jpeg"
     ]
   },
   {
-    "id": 2003,
-    "nome": "Colar Pérola Elegance",
-    "categoria": "colares",
+    "id": "BR92464",
+    "nome": "Brinco Flor Cravejada - Folhado a Ouro",
+    "categoria": "brincos",
     "destaque": false,
-    "preco": 109.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
+    "preco": 25.00,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/BR92464-2.jpeg",
     "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
+      "../produtos/produtos-img/BR92464-1.jpeg",
+      "../produtos/produtos-img/BR92464-2.jpeg"
     ]
   },
-    {
-    "id": 2003,
-    "nome": "Colar Pérola Elegance",
+  {
+    "id": "BR92465",
+    "nome": "Brinco Flor Cravejada - Folhado a Prata 925",
+    "categoria": "brincos",
+    "destaque": true,
+    "preco": 25.00,
+    "descricao": "✨ Peças folheadas a prata 925 (10 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/BR92465-2.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/BR92465-1.jpeg",
+      "../produtos/produtos-img/BR92465-2.jpeg"
+    ]
+  },
+  {
+    "id": "BR92468",
+    "nome": "Brinco Cravejado - Folhado a Ouro",
+    "categoria": "brincos",
+    "destaque": true,
+    "preco": 25.00,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/BR92468-1.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/BR92468-1.jpeg",
+      "../produtos/produtos-img/BR92468-2.jpeg"
+    ]
+  },
+  {
+    "id": "CH9584",
+    "nome": "Choker Veneziana 3 Corações Lisos - Folhado a Ouro",
     "categoria": "colares",
     "destaque": false,
-    "preco": 109.9,
-    "descricao": "Colar delicado com pingente de coração, perfeito para presentear.",
-    "imagem": "../produtos/produtos-img/id2002-1.png",
+    "preco": 44.99,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/CH9584-1.jpeg",
     "imagens": [
-      "../produtos/produtos-img/id2002-1.png",
-      "../produtos/produtos-img/id2002-2.png",
-      "../produtos/produtos-img/id2002-1.png"
+      "../produtos/produtos-img/CH9584-1.jpeg"
+    ]
+  },
+  {
+    "id": "CH9585",
+    "nome": "Choker Veneziana 3 Corações Lisos - Folhado a Prata 925",
+    "categoria": "colares",
+    "destaque": true,
+    "preco": 44.99,
+    "descricao": "✨ Peças folheadas a prata 925 (10 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/CH9585-1.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/CH9585-1.jpeg"
+    ]
+  },
+  {
+    "id": "CH9610",
+    "nome": "Choker Corações Vazados G - Folhado a Prata 925",
+    "categoria": "colares",
+    "destaque": true,
+    "preco": 44.99,
+    "descricao": "✨ Peças folheadas a prata 925 (10 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/CH9610-1.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/CH9610-1.jpeg"
+    ]
+  },
+  {
+    "id": "CO91320",
+    "nome": "Cartier Medalha Quadrada Cristal - Folhado a Ouro",
+    "categoria": "colares",
+    "destaque": true,
+    "preco": 44.99,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/CO91320-1.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/CO91320-1.jpeg"
+    ]
+  },
+  {
+    "id": "CO91321",
+    "nome": "Cartier Medalha Quadrada Cristal - Folhado a Prata 925",
+    "categoria": "colares",
+    "destaque": false,
+    "preco": 44.99,
+    "descricao": "✨ Peças folheadas a prata 925 (10 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/CO91321-1.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/CO91321-1.jpeg"
+    ]
+  },
+  {
+    "id": "CONJ9503",
+    "nome": "Conjunto Colar + Brinco Gota Vazado Cravejado - Folhado a Ouro",
+    "categoria": "conjuntos",
+    "destaque": true,
+    "preco": 34.99,
+    "descricao": "✨ Peças folheadas a ouro (3 milésimos) com verniz protetor, brilho duradouro e design moderno.",
+    "imagem": "../produtos/produtos-img/CONJ9503-1.jpeg",
+    "imagens": [
+      "../produtos/produtos-img/CONJ9503-1.jpeg"
     ]
   }
-
 ]

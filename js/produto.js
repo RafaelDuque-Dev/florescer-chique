@@ -47,7 +47,9 @@ function exibirDetalhesProduto(produto) {
       <button class="anterior">&#10094;</button>
       <div class="imagens">
         ${produto.imagens.map((img, i) => `
-          <img src="${img}" class="imagem-carrossel ${i === 0 ? "ativa" : ""}" alt="${produto.nome}">
+          <img src="${img}" 
+               class="imagem-carrossel ${i === 0 ? "ativa" : ""}" 
+               alt="${produto.nome}">
         `).join("")}
       </div>
       <button class="proximo">&#10095;</button>
@@ -61,17 +63,13 @@ function exibirDetalhesProduto(produto) {
     <p class="produto-preco"><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
 
     <div class="acoes-produto">
-      <button 
-        class="botao-sacola"
-        data-nome="${produto.nome}"
-        data-preco="${produto.preco}">
-        👜 Adicionar à sacola
-      </button>
+      <button class="botao-sacola">👜 Adicionar à sacola</button>
     </div>
   `;
 
-  document.querySelector(".botao-sacola").addEventListener("click", function () {
-    adicionarSacola(this.dataset.nome, Number(this.dataset.preco));
+  document.querySelector(".botao-sacola").addEventListener("click", () => {
+    adicionarProduto(produto);
+    alert("Produto adicionado à sacola 👜");
   });
 
   configurarCarrossel();
@@ -102,8 +100,9 @@ function configurarCarrossel() {
 }
 
 /* ===============================
-   SACOLA
+   SACOLA (COMPATÍVEL COM sacola.js)
 ================================ */
+
 function obterSacola() {
   return JSON.parse(localStorage.getItem("sacola")) || [];
 }
@@ -113,35 +112,32 @@ function salvarSacola(sacola) {
   atualizarContador();
 }
 
-function adicionarSacola(nome, preco) {
+function adicionarProduto(produto) {
   const sacola = obterSacola();
-  sacola.push({ nome, preco });
+
+  const existente = sacola.find(item => item.id === produto.id);
+
+  if (existente) {
+    existente.quantidade += 1;
+  } else {
+    sacola.push({
+      id: produto.id,
+      nome: produto.nome,
+      preco: produto.preco,
+      imagem: produto.imagem, // 👈 imagem principal
+      quantidade: 1
+    });
+  }
+
   salvarSacola(sacola);
-  alert("Produto adicionado à sacola 👜");
 }
 
 function atualizarContador() {
   const contador = document.getElementById("contador-sacola");
-  if (contador) {
-    contador.innerText = obterSacola().length;
-  }
-}
+  if (!contador) return;
 
-function enviarSacolaWhatsApp() {
   const sacola = obterSacola();
+  const totalItens = sacola.reduce((soma, item) => soma + item.quantidade, 0);
 
-  if (!sacola.length) {
-    alert("Sua sacola está vazia 😕");
-    return;
-  }
-
-  let msg = "Olá! Tenho interesse nos seguintes produtos:%0A%0A";
-
-  sacola.forEach(p => {
-    msg += `- ${p.nome} – R$ ${p.preco.toFixed(2)}%0A`;
-  });
-
-  msg += "%0A Aguardo retorno 😊";
-
-  window.open(`https://wa.me/${WHATSAPP_NUMERO}?text=${msg}`, "_blank");
+  contador.innerText = totalItens;
 }
