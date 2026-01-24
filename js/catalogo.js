@@ -41,6 +41,13 @@ function filtrar() {
   exibirProdutos(produtosFiltrados);
 }
 
+
+
+function calcularPrecoComDesconto(preco, desconto) {
+  return desconto ? preco - (preco * desconto / 100) : preco;
+}
+
+
 function exibirProdutos(lista) {
   const container = document.getElementById("catalogo-lista");
   container.innerHTML = "";
@@ -48,15 +55,39 @@ function exibirProdutos(lista) {
   lista.forEach(produto => {
     const card = document.createElement("div");
     card.className = "card";
+  
+  
+  const precoFinal = calcularPrecoComDesconto(produto.preco, produto.desconto);
 
-    card.innerHTML = `
+  const emPromocao = produto.promocao === true;
+
+  card.innerHTML = `
+    <div class="card-imagem">
+      ${produto.promocao && produto.desconto
+        ? `<span class="selo-promocao">-${produto.desconto}%</span>`
+        : ''
+      }
       <img src="${produto.imagem}" alt="${produto.nome}">
-      <div class="card-body">
-        <h3>${produto.nome}</h3>
-        <p><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
-        <button onclick="abrirDetalhes('${produto.id}')">Ver detalhes</button>
-      </div>
-    `;
+    </div>
+
+    <div class="card-body">
+      <h3>${produto.nome}</h3>
+
+      ${produto.promocao
+        ? `
+          <p class="preco-antigo">R$ ${produto.preco.toFixed(2)}</p>
+          <p class="preco-novo">R$ ${precoFinal.toFixed(2)}</p>
+        `
+        : `
+          <p class="preco-novo">R$ ${produto.preco.toFixed(2)}</p>
+        `
+      }
+
+      <button onclick="abrirDetalhes('${produto.id}')">
+        Ver detalhes
+      </button>
+    </div>
+  `;
 
     container.appendChild(card);
   });

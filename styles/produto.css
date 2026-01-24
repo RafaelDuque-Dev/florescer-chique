@@ -75,6 +75,29 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.selo-promocao-produto {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #c0392b;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.badge-desconto {
+  background: #c0392b;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+
 /* =========================
    BOTÃO WHATSAPP
    ========================= */

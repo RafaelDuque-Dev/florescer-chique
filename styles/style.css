@@ -388,7 +388,7 @@ footer p a:hover {
     max-width: 75vw; /* Garante que caiba na tela */
     margin: 0 10px;
   }
-  
+
   /* A CORREÇÃO DA FOTO GIGANTE: */
   .produtos-card img,
   .card img {

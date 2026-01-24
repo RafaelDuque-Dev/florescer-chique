@@ -4,30 +4,66 @@ async function carregarProdutos() {
     const produtos = await resposta.json();
 
     const produtosTrack = document.getElementById("produtos-track");
-    produtosTrack.innerHTML = ""; // Limpa antes de inserir
+    produtosTrack.innerHTML = "";
 
-    // Renderiza apenas os produtos destaque
-    produtos.filter(p => p.destaque).forEach(produto => {
-      const card = document.createElement("div");
-      card.className = "produtos-card";
-      card.innerHTML = `
-        <img src="${produto.imagem}" alt="${produto.nome}">
-        <div class="card-body">
-          <h3>${produto.nome}</h3>
-          <p><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
-          <button onclick="abrirDetalhes('${produto.id}')">Ver detalhes</button>
-        </div>
-      `;
-      produtosTrack.appendChild(card);
-    });
+    produtos
+      .filter(p => p.destaque)
+      .forEach(produto => {
 
-    // Carrossel automático dos destaques (somente após renderizar)
+        const card = document.createElement("div");
+        card.className = "produtos-card";
+
+        const emPromocao =
+          produto.promocao === true &&
+          typeof produto.desconto === "number" &&
+          produto.desconto > 0;
+
+        const precoFinal = emPromocao
+          ? calcularPrecoComDesconto(produto.preco, produto.desconto)
+          : produto.preco;
+
+        card.innerHTML = `
+          <div class="card-imagem">
+            ${emPromocao
+              ? `<span class="selo-promocao">-${produto.desconto}%</span>`
+              : ''
+            }
+            <img src="${produto.imagem}" alt="${produto.nome}">
+          </div>
+
+          <div class="card-body">
+            <h3>${produto.nome}</h3>
+
+            ${emPromocao ? `
+              <p class="preco-antigo">
+                R$ ${produto.preco.toFixed(2)}
+              </p>
+              <p class="preco-novo">
+                R$ ${precoFinal.toFixed(2)}
+              </p>
+            ` : `
+              <p class="preco-novo">
+                R$ ${produto.preco.toFixed(2)}
+              </p>
+            `}
+
+            <button onclick="abrirDetalhes('${produto.id}')">
+              Ver detalhes
+            </button>
+          </div>
+        `;
+
+        produtosTrack.appendChild(card);
+      });
+
     iniciarCarrosselLoop(produtosTrack);
 
   } catch (erro) {
     console.error("Erro ao carregar produtos.json:", erro);
   }
 }
+
+
 
 // Carrossel principal (banner)
 const track = document.querySelector('.carousel-track');
