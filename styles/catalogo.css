@@ -65,18 +65,23 @@ label {
   border-radius: 8px 8px 0 0;
 }
 
+.card-imagem {
+  position: relative;
+}
+
 .selo-promocao {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 8px;
+  left: 8px;
   background: #c0392b;
   color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
   padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
   border-radius: 4px;
   z-index: 10;
 }
+
 
 .preco-antigo {
   text-decoration: line-through;

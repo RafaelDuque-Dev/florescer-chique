@@ -382,13 +382,6 @@ footer p a:hover {
     padding: 1.5rem;
   }
 
-  /* Card do produto no mobile */
-  .produtos-card {
-    min-width: 75vw;
-    max-width: 75vw; /* Garante que caiba na tela */
-    margin: 0 10px;
-  }
-
   /* A CORREÇÃO DA FOTO GIGANTE: */
   .produtos-card img,
   .card img {
