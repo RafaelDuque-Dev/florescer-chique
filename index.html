@@ -50,31 +50,57 @@
     </ul>
   </nav>
 
-  <main>
-    <div class="banner">
-      <div class="carousel" aria-label="Galeria de imagens em destaque">
-        <div class="carousel-track">
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/26741252/pexels-photo-26741252.jpeg" alt="Modelo vestindo vestido elegante">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/5469695/pexels-photo-5469695.jpeg" alt="Modelo com look sofisticado">
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/5658856/pexels-photo-5658856.jpeg" alt="Detalhes de acessórios de moda">
-          </div>
+<main>
+  <div class="banner">
+
+    <!-- CARROSSEL DE IMAGENS (BANNER PRINCIPAL) -->
+    <div class="carousel" aria-label="Galeria de imagens em destaque">
+      <div class="carousel-track">
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/26741252/pexels-photo-26741252.jpeg" alt="Modelo vestindo vestido elegante">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/5469695/pexels-photo-5469695.jpeg" alt="Modelo com look sofisticado">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/5658856/pexels-photo-5658856.jpeg" alt="Detalhes de acessórios de moda">
         </div>
       </div>
-
-      <section class="section destaque-banner" id="destaques">
-        <h2 class="subtitle">Destaques da Semana</h2>
-        <div class="produtos-carousel">
-          <div class="produtos-track" id="produtos-track"><!-- Cards dinâmicos --></div>
-        </div>
-        <p class="destaque-frase">Floresça com graça, irradiando beleza e leveza em cada instante.</p>
-      </section>
     </div>
-  </main>
+
+    <!-- DESTAQUES DA SEMANA -->
+    <section class="section destaque-banner" id="destaques">
+      <h2 class="subtitle">Destaques da Semana</h2>
+
+      <div class="produtos-carousel">
+
+        <!-- BOTÃO ESQUERDA -->
+        <button class="carousel-btn left" id="btn-prev" aria-label="Produto anterior">
+          ‹
+        </button>
+
+        <!-- VIEWPORT (IMPORTANTE) -->
+        <div class="produtos-viewport">
+          <div class="produtos-track" id="produtos-track">
+            <!-- Cards dinâmicos -->
+          </div>
+        </div>
+
+        <!-- BOTÃO DIREITA -->
+        <button class="carousel-btn right" id="btn-next" aria-label="Próximo produto">
+          ›
+        </button>
+
+      </div>
+
+      <p class="destaque-frase">
+        Floresça com graça, irradiando beleza e leveza em cada instante.
+      </p>
+    </section>
+
+  </div>
+</main>
+
 
   <footer id="contato">
     <div>
